@@ -1,0 +1,8 @@
+<div>
+    <h2>Message from parent: {{ childMsgReciever }}</h2>
+</div>
+
+<div>
+    <label>Send Message: <input #childMsg></label>
+    <button (click)="sendMsg(childMsg.value)">Send</button>
+</div>

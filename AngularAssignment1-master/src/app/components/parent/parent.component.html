@@ -1,0 +1,9 @@
+<app-child [childMsgReciever]="parentMsg" (msgFromChild)="addMsg($event)"></app-child>
+
+<div>
+    <ul>
+        <li *ngFor="let msg of childMessages"> {{ msg }} </li>
+    </ul>
+</div>
+
+
